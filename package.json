@@ -2,12 +2,22 @@
   "name": "ognanshissi-ngx-loading",
   "version": "1.0.0",
   "description": "Angular loading library",
+  "author": {
+    "email": "bazieambroise@gmail.com",
+    "name": "Ambroise BAZIE",
+    "url": "https://github.com/ognanshissi"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "start:ngx-loading": "ng build ngx-loading --configuration development",
+    "watch:ngx-loading": "ng build ngx-loading --watch --configuration development",
+    "build:ngx-loading": "ng build ngx-loading --configuration production",
+    "test:ngx-loading": "ng test ngx-loading"
+
   },
   "private": true,
   "dependencies": {
@@ -35,6 +45,7 @@
     "karma-coverage": "~2.1.0",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
+    "ng-packagr": "^13.0.0",
     "typescript": "~4.5.2"
   }
 }
