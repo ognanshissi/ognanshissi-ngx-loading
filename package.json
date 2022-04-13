@@ -1,6 +1,7 @@
 {
-  "name": "ognanshissi-nx-loading",
-  "version": "0.0.0",
+  "name": "ognanshissi-ngx-loading",
+  "version": "1.0.0",
+  "description": "Angular loading library",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

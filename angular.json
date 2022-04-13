@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ognanshissi-nx-loading": {
+    "ognanshissi-ngx-loading": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ognanshissi-nx-loading",
+            "outputPath": "dist/ognanshissi-ngx-loading",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -72,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ognanshissi-nx-loading:build:production"
+              "browserTarget": "ognanshissi-ngx-loading:build:production"
             },
             "development": {
-              "browserTarget": "ognanshissi-nx-loading:build:development"
+              "browserTarget": "ognanshissi-ngx-loading:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ognanshissi-nx-loading:build"
+            "browserTarget": "ognanshissi-ngx-loading:build"
           }
         },
         "test": {
@@ -107,5 +107,5 @@
       }
     }
   },
-  "defaultProject": "ognanshissi-nx-loading"
+  "defaultProject": "ognanshissi-ngx-loading"
 }
