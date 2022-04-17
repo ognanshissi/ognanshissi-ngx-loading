@@ -1,5 +1,19 @@
-<div class="container mx-auto flex justify-center items-center py-10">
-  <div class="text-5xl underline">
-    Ognanshissi Ngx loading library
+<ngx-loading></ngx-loading>
+
+<div class="container mx-auto flex justify-center items-center">
+  <div class="flex flex-col h-screen justify-center items-center">
+    <div class="text-5xl underline mb-8 text-center">
+      Ognanshissi Ngx loading library
+    </div>
+
+    <div class="flex justify-center">
+      <div class="space-x-5">
+        <button class="px-4 py-2 border border-teal-500 rounded-full bg-teal-500 text-black hover:shadow-sm" (click)="showLoader()">Show loader</button>
+        <button class="px-4 py-2 border border-teal-500 rounded-full bg-teal-500 text-black hover:shadow-sm" (click)="showLoaderBackDrop()">Show loader with backdrop - bigger</button>
+        <button class="px-4 py-2 border border-teal-500 rounded-full bg-teal-500 text-black hover:shadow-sm" (click)="showLoaderMessage()">Show with message</button>
+        <button class="px-4 py-2 border border-teal-500 rounded-full bg-teal-500 text-black hover:shadow-sm" (click)="showLoaderNoMessage()">Show with no message</button>
+
+      </div>
+    </div>
   </div>
 </div>

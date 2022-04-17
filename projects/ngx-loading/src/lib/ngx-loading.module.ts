@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { NgxLoadingComponent } from './ngx-loading.component';
 
@@ -7,6 +8,7 @@ import { NgxLoadingComponent } from './ngx-loading.component';
     NgxLoadingComponent
   ],
   imports: [
+    CommonModule
   ],
   exports: [
     NgxLoadingComponent
