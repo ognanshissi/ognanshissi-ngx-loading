@@ -2,6 +2,9 @@
   "name": "ognanshissi-ngx-loading",
   "version": "1.0.0",
   "description": "Angular loading library",
+  "repository": {
+    "url": "https://github.com/ognanshissi/ognanshissi-ngx-loading"
+  },
   "author": {
     "email": "bazieambroise@gmail.com",
     "name": "Ambroise BAZIE",
