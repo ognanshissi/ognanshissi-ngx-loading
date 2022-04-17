@@ -1,24 +1,69 @@
-# Ngx Loading
+# Angular Loading Library
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.0.
+## Getting Started
+`NgxLoading` help you handle page loading, posting data to the server loading state and more others example of loading more easier.
 
-## Code scaffolding
+- You have svg loaders integrated
+- Loader handle with a service state
 
-Run `ng generate component component-name --project ngx-loading` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-loading`.
-> Note: Don't forget to add `--project ngx-loading` or else it will be added to the default project in your `angular.json` file. 
+## Installation
 
-## Build
+ Use your favorite node package management
+````console
+npm i @ognanshissi/ngx-loading or yarn add @ognanshissi/ngx-loading
+````
 
-Run `ng build ngx-loading` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Usage
+- Add `NgxLoadingModule` inside `app.module.ts` imports arrays
+````typescript
+import {NgxLoadingModule} from '@ognanshissi/ngx-loading'; 
 
-## Publishing
+@NgModule({
+  // ..
+  imports: [
+    // ...
+    NgxLoadingModule
+    // ...
+  ]
+  // ...
+})
+export class AppModule {}
+````
 
-After building your library with `ng build ngx-loading`, go to the dist folder `cd dist/ngx-loading` and run `npm publish`.
+- Add `<ngx-loading></ngx-loading>` component inside `app.component.html`.
 
-## Running unit tests
+````html
+  <ngx-loading></ngx-loading>
+  <router-outlet></router-outlet>
+````
 
-Run `ng test ngx-loading` to execute the unit tests via [Karma](https://karma-runner.github.io).
+> Example
 
-## Further help
+- Handle the loader state inside `app.component.ts`
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+````typescript
+
+//...
+import { NgxLoadingService } from '@ognanshissi/ngx-loading';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss']
+})
+export class AppComponent {
+
+  constructor(
+    private _loading: NgxLoadingService
+    //...
+  ) {
+
+  }
+
+  showLoader() {
+    this._loading.show('Chargement en cours...', {vertical: 'center', horizontal: 'center'});
+    setTimeout(() => this._loading.hide(), 5000);
+  }
+````
+
+## Thank You !
