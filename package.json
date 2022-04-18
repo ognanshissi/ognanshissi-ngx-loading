@@ -19,7 +19,10 @@
     "start:ngx-loading": "ng build ngx-loading --configuration development",
     "watch:ngx-loading": "ng build ngx-loading --watch --configuration development",
     "build:ngx-loading": "ng build ngx-loading --configuration production",
-    "test:ngx-loading": "ng test ngx-loading"
+    "test:ngx-loading": "ng test ngx-loading --browsers=ChromeHeadless",
+    "test:ngx-loading-ci": "ng test ngx-loading --browsers=ChromeHeadless --watch=false",
+    "lint:ngx-loading": "ng lint ngx-loading",
+    "pack:ngx-loading": "cd dist/ngx-loading && npm pack"
   },
   "private": true,
   "dependencies": {
@@ -37,11 +40,19 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~13.2.2",
+    "@angular-eslint/builder": "13.2.1",
+    "@angular-eslint/eslint-plugin": "13.2.1",
+    "@angular-eslint/eslint-plugin-template": "13.2.1",
+    "@angular-eslint/schematics": "13.2.1",
+    "@angular-eslint/template-parser": "13.2.1",
     "@angular/cli": "~13.2.2",
     "@angular/compiler-cli": "~13.2.0",
     "@types/jasmine": "~3.10.0",
     "@types/node": "^12.11.1",
+    "@typescript-eslint/eslint-plugin": "5.17.0",
+    "@typescript-eslint/parser": "5.17.0",
     "autoprefixer": "^10.4.4",
+    "eslint": "^8.12.0",
     "jasmine-core": "~4.0.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
