@@ -10,13 +10,13 @@
 
  Use your favorite node package management
 ````console
-npm i @ognanshissi/ngx-loading or yarn add @ognanshissi/ngx-loading
+npm i @ambroisebazie/ngx-loading or yarn add @ambroisebazie/ngx-loading
 ````
 
 ## Usage
 - Add `NgxLoadingModule` inside `app.module.ts` imports arrays
 ````typescript
-import {NgxLoadingModule} from '@ognanshissi/ngx-loading'; 
+import {NgxLoadingModule} from '@ambroisebazie/ngx-loading'; 
 
 @NgModule({
   // ..
@@ -44,7 +44,7 @@ export class AppModule {}
 ````typescript
 
 //...
-import { NgxLoadingService } from '@ognanshissi/ngx-loading';
+import { NgxLoadingService } from '@ambroisebazie/ngx-loading';
 
 @Component({
   selector: 'app-root',
