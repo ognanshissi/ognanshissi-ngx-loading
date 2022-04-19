@@ -1,5 +1,5 @@
 {
-  "name": "@ognanshissi/ngx-loading",
+  "name": "@ambroisebazie/ngx-loading",
   "version": "0.0.6",
   "peerDependencies": {
     "@angular/common": "^13.2.0",
